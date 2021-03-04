@@ -1,0 +1,10 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.art2 {
+  /* row line / col line /  row end line / col end line */
+  grid-area: 1 / 2 / 3 / 4;
+  background-color: tomato;
+}

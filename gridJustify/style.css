@@ -3,18 +3,25 @@ body {
 }
 
 .grid-container {
-  /* margin: 0 1.5em; */
+  min-height: 1000px;
+  background-color: lightgoldenrodyellow;
+  margin: 0 1.5em;
   display: grid;
-  /* grid-template-columns: 33% 33% 33%; */
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: auto auto auto;
   column-gap: 2em;
   row-gap: 1em;
-  gap: 1.5em;
-
-  /* lygiavimas x asimi */
+  gap: 5.5em;
+  /* rikiuojam x asimi is kaies i desine taip pat kaip ir flex */
   justify-content: end;
-  justify-content: center;
+  justify-content: space-around;
+
+  /* rikiuojam y asimi vertikaliai  */
+
+  align-content: end;
+  align-content: center;
+  align-content: space-around;
 }
 
 .art {
