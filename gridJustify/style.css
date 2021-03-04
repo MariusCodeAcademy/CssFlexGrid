@@ -1,0 +1,30 @@
+body {
+  /* background-color: rgb(211, 71, 71); */
+}
+
+.grid-container {
+  /* margin: 0 1.5em; */
+  display: grid;
+  /* grid-template-columns: 33% 33% 33%; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: auto auto auto;
+  column-gap: 2em;
+  row-gap: 1em;
+  gap: 1.5em;
+
+  /* lygiavimas x asimi */
+  justify-content: end;
+  justify-content: center;
+}
+
+.art {
+  padding: 0.5em;
+  background-color: tomato;
+
+  max-width: 100px;
+}
+
+/* pasliapiam paragrafus */
+.art__text {
+  display: none;
+}
