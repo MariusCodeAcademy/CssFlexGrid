@@ -3,10 +3,10 @@
 }
 .box {
   min-width: 100px;
-  height: 100px;
-  border: 1px solid #000;
-  margin: 15px;
-  background-color: #eee;
+  /* height: 100px; */
+  /* border: 1px solid #000; */
+  /* margin: 15px; */
+  /* background-color: #eee; */
 }
 body {
   background-color: rgb(113, 239, 109);
@@ -15,4 +15,10 @@ body {
 .flex-container {
   display: flex;
   /* justify-content: space-around; */
+  /* flex-wrap: wrap; */
+}
+
+.box {
+  flex-basis: 100%;
+  padding: 15px;
 }
