@@ -7,7 +7,7 @@ body {
   display: grid;
   /* grid-template-columns: 33% 33% 33%; */
   grid-template-columns: 1fr 2fr 3fr;
-  grid-template-rows: 1fr 0.7fr;
+  /* grid-template-rows: auto auto auto; */
   column-gap: 2em;
   row-gap: 1em;
   gap: 1.5em;
@@ -18,13 +18,19 @@ body {
 }
 
 .art3 {
-  /* grid-column-start: 1;
-  grid-column-end: 3; */
+  grid-row: 2 / 4;
   background-color: lightblue;
 }
 
 .art1 {
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 5;
+
   background-color: rgb(146, 202, 179);
+}
+
+.art2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-column: 2 / 4;
 }
