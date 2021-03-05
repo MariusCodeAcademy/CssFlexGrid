@@ -1,10 +1,33 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  /* aprasom kas kur turetu buti */
+  grid-template-areas:
+    "header header header"
+    "menu main right"
+    "menu footer footer";
 }
 
-.art2 {
-  /* row line / col line /  row end line / col end line */
-  grid-area: 1 / 2 / 3 / 4;
-  background-color: tomato;
+.art {
+  border: 1px solid #000;
+}
+
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.main {
+  grid-area: main;
+}
+
+.right {
+  grid-area: right;
+}
+
+.footer {
+  grid-area: footer;
 }
